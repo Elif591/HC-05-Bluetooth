@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Simple Bluetooth</string>
+    <string name="led">LED</string>
+    <string name="bluetooth_a">Bluetooth aç</string>
+    <string name="bluetooth_kapa">Bluetooth kapa</string>
+    <string name="e_le_tirilmi_cihazlar_g_ster">Eşleştirilmiş Cihazları Göster</string>
+    <string name="yeni_cihazlar_ke_fedin">Yeni Cihazları Keşfedin</string>
+    <string name="durum">Durum:</string>
+    <string name="lt_oku"><![CDATA[<Oku>]]></string>
+    <string name="lt_bluetooth_durum"><![CDATA[<Bluetooth durum>]]></string>
+    <string name="rx">RX:</string>
+    <string name="button">Button</string>
+    <string name="hint">hint</string>
+    <string name="gonder">GONDER</string>
+</resources>

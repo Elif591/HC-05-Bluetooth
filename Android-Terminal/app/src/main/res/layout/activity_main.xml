@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mcuhq.simplebluetooth.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/durum"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bluetooth_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/lt_bluetooth_durum" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth_a" />
+
+    <Button
+        android:id="@+id/off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth_kapa" />
+
+    <Button
+        android:id="@+id/paired_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/e_le_tirilmi_cihazlar_g_ster" />
+
+    <Button
+        android:id="@+id/discover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yeni_cihazlar_ke_fedin" />
+
+    <ListView
+        android:id="@+id/devices_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="116dp"
+        android:choiceMode="singleChoice" />
+
+
+    <TextView
+        android:id="@+id/read_buffer"
+        android:layout_width="378dp"
+        android:layout_height="62dp"
+        android:ellipsize="end" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Input_edit"
+        android:layout_width="383dp"
+        android:layout_height="36dp" />
+
+    <Button
+        android:id="@+id/button_gonder"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:onClick="buttonTapped"
+        android:text="@string/gonder"
+        tools:ignore="OnClick" />
+
+
+
+
+</LinearLayout>
